@@ -1,0 +1,52 @@
+:root {
+    --Red400: hsl(0, 100%, 74%);
+    --Green400: hsl(154, 59%, 51%);
+    --Purple700: hwb(248 33% 35%);
+    --Gray900: hsl(249, 10%, 26%);
+    --Purple350: hsl(246, 25%, 77%);
+}
+
+body {
+    background-color: var(--Red400) !important;
+    background-image: url('images/bg-intro-desktop.png');
+}
+
+@media (max-width:768px) {
+    body {
+        background-image: url('images/bg-intro-mobile.png');
+    }
+}
+
+.free {
+    background-color: var(--Purple700);
+    color: var(--bs-body-bg);
+    font-size: 1.2rem;
+    box-shadow:
+        0px 5px 0px 0px hwb(248deg 21.78% 37.17%),
+        0px 13px 0px 0px #22222240
+}
+
+input:focus {
+    outline: none;
+}
+
+img {
+    width: 2rem;
+}
+
+.claim {
+    background-color: var(--Green400);
+    box-shadow: 0px 5px 0px 0px hsl(154deg 61.79% 41.95%);
+    transition: .2s;
+}
+.claim:hover{
+    opacity: .7;
+    box-shadow: none;
+}
+.clicking {
+    font-size: 14px;
+}
+
+p span {
+    color: var(--Red400);
+}
